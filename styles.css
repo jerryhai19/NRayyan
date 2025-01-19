@@ -1,0 +1,234 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    box-sizing: border-box;
+}
+
+h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    color: #e60000;
+}
+
+button, input[type="submit"] {
+    background-color: #e60000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #cc0000;
+}
+
+button.cta-btn {
+    font-family: 'Press Start 2P', cursive;
+    padding: 12px 24px;
+    font-size: 18px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 10px 0;
+}
+
+section {
+    padding: 40px 20px;
+    margin: 20px 0;
+}
+
+#main-header {
+    background-color: #ffcccb;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+}
+
+#main-header h1 {
+    font-size: 40px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav a {
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #e60000;
+}
+
+#hero {
+    background-color: #ffb3b3;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+#hero h2 {
+    font-size: 32px;
+    color: #cc0000;
+    font-family: 'Press Start 2P', cursive;
+}
+
+#about {
+    background-color: #fff;
+    border: 1px solid #e60000;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#about img {
+    width: 300px;
+    border-radius: 15px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#gallery {
+    background-color: #fff;
+    margin-top: 40px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.gallery-item img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+#achievements {
+    background-color: #fff;
+    padding: 30px 20px;
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#achievements ul {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
+    color: #cc0000;
+}
+
+#contact {
+    background-color: #ffcccb;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+#contact input, #contact textarea {
+    padding: 10px;
+    width: 300px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#contact button {
+    padding: 12px 24px;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: #cc0000;
+    color: white;
+}
+
+#main-footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+#main-footer p {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Pop-up Styles */
+.pop-up {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffcccb;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+}
+
+.pop-up h3 {
+    font-size: 24px;
+    font-family: 'Press Start 2P', cursive;
+    color: #cc0000;
+}
+
+.pop-up p {
+    font-size: 18px;
+    color: #333;
+}
+
+.pop-up button {
+    margin-top: 10px;
+    background-color: #cc0000;
+}
+
+/* Sticker Styles */
+.sticker {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #ffcccb;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    z-index: 9999;
+}
+
+.sticker:hover {
+    background-color: #e60000;
+    color: white;
+}
